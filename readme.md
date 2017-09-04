@@ -1,6 +1,6 @@
-# Online Chat - example app build on React / Redux / Socket.io
+# Online Chat - example app built on React / Redux / Socket.io
 
-This app was build for learning purpose only.
+This app was built for learning purpose only.
 
 Includes:
 - backend server for serving static files, api and socket communications (based on Express & Socket.io);
