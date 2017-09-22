@@ -5,12 +5,15 @@ module.exports.login = function(req, res) {
 }
 
 module.exports.register = function(req, res) {  
-  let result = true;
-  
+  let result = {
+    result: true
+  };
+
   try {
     User.addUser(req.body.nickname, req.body.password);
   } catch (e) {
-    result = false
+    result.result = false;
+    result.errorMessage = e.message;
   }
 
   res.json(result);

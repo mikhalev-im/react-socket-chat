@@ -51,7 +51,7 @@ class LoginWrapper extends React.Component {
     return (
       <div className="container login-page">
         <div className="form">
-          <LoginForm handleSubmit={this.handleSubmit} nickname={this.state.nickname} handlePassChange={this.handlePassChange} handleNickChange={this.handleNickChange} />
+          <LoginForm handleSubmit={this.handleSubmit} nickname={this.state.nickname} handlePassChange={this.handlePassChange} handleNickChange={this.handleNickChange} errorReason={this.props.user.logFailReason} />
         </div>
       </div>
     );

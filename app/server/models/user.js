@@ -1,7 +1,9 @@
 let users = {}
 
 module.exports.addUser = function(login, password) {
-  if (users[login]) {
+  if (!login || !password) {
+    throw new Error('Login and password cannot be empty');
+  } else if (users[login]) {
     throw new Error('User with this login already exists');
   }
 

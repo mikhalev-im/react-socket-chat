@@ -38,12 +38,13 @@ export const register = (nick, pass) => {
       return response.json();
     })
     .then((data) => {
-      if (data === true) {
+      if (data.result === true) {
         dispatch({
           type: REGISTER_SUCCESS
         });
       } else {
-        throw new Error('Can not register with your data');
+        let message = data.errorMessage || 'Unknown error'
+        throw new Error(message);
       }
     })
     .catch((e) => {
