@@ -1,6 +1,6 @@
 # Online Chat - example app built on React, Redux & Socket.io
 
-<img src="https://image.ibb.co/d7Ltia/screenshot.jpg" alt="screenshot" />
+<img src="https://c1one-38.github.io/react-socket-chat/01.jpg" alt="screenshot" />
 
 This app was built for learning purpose only.
 
